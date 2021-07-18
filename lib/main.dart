@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'ui/HomeScreen/main.dart';
 import 'ui/SplashScreen/main.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(MyApp());
 }
 
