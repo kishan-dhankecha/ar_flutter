@@ -1,6 +1,3 @@
-import 'dart:developer';
-
-import 'package:arcore_flutter_plugin/arcore_flutter_plugin.dart';
 import 'package:flutter/material.dart';
 
 import 'ui/HomeScreen/main.dart';
@@ -8,10 +5,6 @@ import 'ui/SplashScreen/main.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  log('ARCORE IS AVAILABLE?');
-  log('${await ArCoreController.checkArCoreAvailability()}');
-  log('\nAR SERVICES INSTALLED?');
-  log('${await ArCoreController.checkIsArCoreInstalled()}');
   runApp(MyApp());
 }
 
